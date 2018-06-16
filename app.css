@@ -1,0 +1,293 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+}
+
+.error {
+  background-color: #ff5719;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 1rem 2rem 0 2rem;
+  padding: 1rem;
+  border: 1.2px solid #eee;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4582ec;
+  border-radius: 5px;
+}
+
+.nav-list {
+  flex: 0 1;
+  list-style: none;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.heading-box {
+  flex: 1 1;
+  margin-left: 2rem;
+  padding: 2rem;
+  border: 1.5px solid #eee;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.heading-primary {
+  font-size: 3rem;
+  color: #4582ec;
+}
+
+.heading-instruction {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.username-input {
+  width: 100%;
+  padding: 1.2rem;
+  border: 1.2px solid #eee;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  color: #4582ec;
+  transition: all 0.2s;
+}
+
+.username-input:focus {
+  box-shadow: 0 0 0 3pt rgba(69, 130, 236, 0.3);
+  outline: none;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #333;
+  border: 1.2px solid #eee;
+  border-radius: 2px;
+  margin: 0rem 2rem 1rem 2rem;
+  padding: 1.5rem;
+}
+
+.content {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.user-profile {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.image-box {
+  flex: 0 1 25rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.user-image {
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.user-link:link,
+.user-link:visited {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 0;
+  background-color: #4582ec;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.user-link:hover {
+  background-color: rgb(41, 116, 255);
+}
+
+.user-details {
+  flex: 1 1;
+  margin-left: 2rem;
+}
+
+.profile-badges {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.badge-primary {
+  background-color: #4582ec;
+}
+
+.badge-secondary {
+  background-color: #adb5bd;
+}
+
+.badge-success {
+  background-color: #02b875;
+}
+
+.badge-info {
+  background-color: #17a2b8;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-item {
+  font-size: 2rem;
+  border: 1.2px solid #eee;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.repo-heading {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #4582ec;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+
+.repo-list {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.repo-item {
+  text-align: center;
+  font-size: 1.6rem;
+  border: 1.2px solid #eee;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.repo-link:link,
+.repo-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #4582ec;
+  margin-bottom: 1rem;
+}
+
+.repo-badges {
+  display: flex;
+  justify-content: center;
+}
+
+.repo-badges > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 40em) {
+  .header {
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-items: center; */
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4582ec;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+
+  .heading-box {
+    margin-left: 0;
+    border: 1.5px solid #eee;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .user-profile {
+    flex-flow: column;
+    align-items: stretch;
+  }
+
+  .image-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 11rem 0;
+    width: 100%;
+  }
+
+  .user-image {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .user-link:link,
+  .user-link:visited {
+    align-self: stretch;
+    padding: 1rem 2rem;
+    background-color: #4582ec;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .user-details {
+    margin-left: 0;
+  }
+}
